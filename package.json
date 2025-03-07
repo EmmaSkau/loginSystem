@@ -1,0 +1,18 @@
+{
+  "name": "4.0loginsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "scripts": {
+    "init-db": "node database.js",
+    "register": "node register.js",
+    "login": "node login.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^8.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
