@@ -9,5 +9,5 @@ CREATE TABLE IF NOT EXISTS users (
 );
 `);
 
-console.log("✅ Database oprettet!");
+console.log("Database oprettet!");
 db.close();

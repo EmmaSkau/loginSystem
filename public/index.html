@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h2>Velkommen</h2>
-        
-        <!-- Registrering -->
-        <div class="form-box">
-            <h3>Opret en ny bruger</h3>
-            <input type="text" id="register-username" placeholder="Brugernavn">
-            <input type="password" id="register-password" placeholder="Adgangskode">
-            <button onclick="registerUser()">Registrer</button>
-            <p id="register-message"></p>
-        </div>
+        <p>Login eller opret en ny bruger</p>
 
-        <!-- Login -->
-        <div class="form-box">
-            <h3>Login</h3>
-            <input type="text" id="login-username" placeholder="Brugernavn">
-            <input type="password" id="login-password" placeholder="Adgangskode">
-            <button onclick="loginUser()">Login</button>
-            <p id="login-message"></p>
-        </div>
+        <main>
+            <!-- Registrering -->
+            <div class="form-box">
+                <h3>Opret en ny bruger</h3>
+                <input type="text" id="register-username" placeholder="Brugernavn">
+                <input type="password" id="register-password" placeholder="Adgangskode">
+                <button onclick="registerUser()">Registrer</button>
+                <p id="register-message"></p>
+            </div>
+
+            <!-- Login -->
+            <div class="form-box">
+                <h3>Login</h3>
+                <input type="text" id="login-username" placeholder="Brugernavn">
+                <input type="password" id="login-password" placeholder="Adgangskode">
+                <button onclick="loginUser()">Login</button>
+                <p id="login-message"></p>
+            </div>
+        </main>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
