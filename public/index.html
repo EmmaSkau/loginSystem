@@ -6,23 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <h2>Velkommen</h2>
         <p>Login eller opret en ny bruger</p>
 
-        <main>
-            <!-- Registrering -->
-            <div class="form-box">
-                <h3>Opret en ny bruger</h3>
-                <input type="text" id="register-username" placeholder="Brugernavn">
-                <input type="password" id="register-password" placeholder="Adgangskode">
-                <button onclick="registerUser()">Registrer</button>
-                <p id="register-message"></p>
-            </div>
-
+        <section class="login">
             <!-- Login -->
             <div class="form-box">
                 <h3>Login</h3>
@@ -31,10 +23,19 @@
                 <button onclick="loginUser()">Login</button>
                 <p id="login-message"></p>
             </div>
-        </main>
-    </div>
 
-    <script src="app.js"></script>
+            <!-- Registrering (Skjult fra start) -->
+            <div class="form-box hidden" id="register-box">
+                <h3>Opret en ny bruger</h3>
+                <input type="text" id="register-username" placeholder="Brugernavn">
+                <input type="password" id="register-password" placeholder="Adgangskode">
+                <button onclick="registerUser()">Registrer</button>
+                <p id="register-message"></p>
+            </div>
+        </section>
+
+        <!-- Knap til at åbne registreringsformularen -->
+        <button class="toggle-btn" onclick="toggleRegister()">Opret Bruger</button>
+    </main>
 </body>
-
 </html>
